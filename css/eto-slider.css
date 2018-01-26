@@ -1,0 +1,156 @@
+/* ETO SLIDER START */ 
+.eto-slider {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.eto-slider ul {
+	display: none; 
+}
+
+.eto-slider .eto-slider_buyukresims {
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+}
+.eto-slider .eto-slider_buyukresims .eto-sl-buyuktek {
+		width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0px;
+}
+.eto-slider .eto-slider_buyukresims .eto-sl-buyuktek img {
+	width: 100%;
+	float: left;
+	height: auto;
+}
+.eto-slider .eto-slider_resimliindizdis {
+	width: 100%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	margin-top: 5px;
+}
+.eto-slider .eto-slider_resimliindizdis .eto-slider_resimliindizic {
+	width: auto;
+	height: 100%;
+	display: block;
+	position: relative;
+}
+.eto-slider .eto-slider_resimliindizdis .eto-slider_resimliindizic .eto-slider_indiztek {
+	width: 50px;
+	height: 50px;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+.eto-slider .eto-slider_resimliindizdis .eto-slider_resimliindizic .eto-slider_indiztek::before {
+	content: " ";
+	width: 0%;
+	height: 3px;
+	background-color: #FF0000;
+	position: absolute;
+	bottom: -5px;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: all ease 0.2s;
+	-webkit-transition: all ease 0.2s;
+	-o-transition: all ease 0.2s;
+	-ms-transition: all ease 0.2s;
+	-moz-transition: all ease 0.2s;
+}
+.eto-slider .eto-slider_resimliindizdis .eto-slider_resimliindizic .eto-slider_indiztek.aktif::before {
+	width: 100%;
+}
+.eto-slider .eto-slider_resimliindizdis .eto-slider_resimliindizic .eto-slider_indiztek img {
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+}
+.eto-slider .eto-sl_okkontrol {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	margin-bottom: auto;
+	margin-top: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	z-index: 54;
+	opacity: 0;
+	transition: all ease 0.2s;
+	-webkit-transition: all ease 0.2s;
+	-o-transition: all ease 0.2s;
+	-ms-transition: all ease 0.2s;
+	-moz-transition: all ease 0.2s;
+}
+.eto-slider:hover .eto-sl_okkontrol {
+	opacity: 1;
+}
+.eto-slider .eto-sl_okkontrol.eto-sl_solok {
+	left: 0px;
+}
+.eto-slider .eto-sl_okkontrol.eto-sl_sagok {
+	right: 0px;
+}
+
+.eto-slider:hover .eto-sl_okkontrol.eto-sl_solok {
+	left: 15px;
+}
+.eto-slider:hover .eto-sl_okkontrol.eto-sl_sagok {
+	right: 15px;
+}
+
+.eto-slider .eto-sl_okkontrol .etoslokicon {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+.eto-slider .eto-sl_okkontrol.eto-sl_solok .etoslokicon {
+	transform: rotate(-180deg);
+}
+
+.eto-slider .eto-sl_okkont_grad {
+	width: 100px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	z-index: 51;	opacity: 0;
+	transition: all ease 0.2s;
+	-webkit-transition: all ease 0.2s;
+	-o-transition: all ease 0.2s;
+	-ms-transition: all ease 0.2s;
+	-moz-transition: all ease 0.2s;
+}
+.eto-slider:hover .eto-sl_okkont_grad {
+	opacity: 1;
+}
+.eto-slider .eto-sl_okkont_grad.eto-sl_grad_sol {
+	left: 0px; /* FF3.6-15 */
+
+	background: -moz-linear-gradient(left, rgba(0,0,0,0.51) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(0,0,0,0.51) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(0,0,0,0.51) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.eto-slider .eto-sl_okkont_grad.eto-sl_grad_sag {
+	right: 0px; /* FF3.6-15 */
+
+	
+	background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.51) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.51) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.51) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/* ETO SLIDER FINISH */ 
+
